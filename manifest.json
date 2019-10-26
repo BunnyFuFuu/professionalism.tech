@@ -13,22 +13,22 @@
 {
   // Required
   "manifest_version": 2,
-  "name": "Cal to Butt",
+  "name": "Professionalism",
   "version": "0.0.1",
 
   // Recommended
-  "description": "Chrome Extension Hackpack @ TreeHacks 2019",
+  "description": "Professionalism.god",
   "icons": {
-    "16": "icons/TreeHacks-white-16.png",
-    "32": "icons/TreeHacks-white-32.png",
-    "48": "icons/TreeHacks-white-48.png",
-    "64": "icons/TreeHacks-white-64.png",
-    "96": "icons/TreeHacks-white-96.png",
-    "128": "icons/TreeHacks-white-128.png"
+    "16": "icons/gary.png",
+    "32": "icons/gary.png",
+    "48": "icons/gary.png",
+    "64": "icons/gary.png",
+    "96": "icons/gary.png",
+    "128": "icons/gary.png"
   },
 
   // Optional
-  "homepage_url": "https://www.treehacks.com/",
+  "homepage_url": "https://professionalism.tech",
 
   // Put any additional permissions your applications needs here.
   // For a list of possibilities, see
