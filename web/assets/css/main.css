@@ -5,6 +5,11 @@ html, body {
     background-color: #111;
 }
 
+.gary {
+    width: 50%;
+    height: 50%;
+}
+
 .theme-bg {
     background-color: #333;
 }

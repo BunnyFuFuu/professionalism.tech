@@ -56,7 +56,7 @@ module.exports = class APIServer {
             .use(ExpressLogger(this.logger))
             .use(Cors.bind(this))
             .use(this.router)
-            .use("/sentiment", SentimentRouter.bind(this))
+            .use("/gary", SentimentRouter.bind(this))
 
         await this.init();
 
@@ -95,6 +95,6 @@ module.exports = class APIServer {
     }
 
     /** @returns {express.Router} */
-    get router() { return AuthRouter.bind(this)(); }
+    get router() { return AuthRouter.bind(this)().use("/gary", SentimentRouter.bind(this)); }
 
 }

@@ -6,6 +6,6 @@ APIServer.init().then(() => {
     .use("/", express.static(__dirname + "/../web"))
     .use("/api", APIServer.router)
     .listen(80, () => {
-        APIServer.logger.info(`Server open`)
+        APIServer.logger.info(`Server open`);
     });
 });
