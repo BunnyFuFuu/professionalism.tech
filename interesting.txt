@@ -1,0 +1,1 @@
+aws comprehend detect-sentiment --region us-west-2 --language-code "en" --text "Gary is a GOD"
