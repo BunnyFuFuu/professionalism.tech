@@ -10,8 +10,11 @@ module.exports = function(req, res) {
         // Bad request
         return void res.sendStatus(400);
 
-    let result = execSync(`aws comprehend detect-sentiment --region us-west-2 ` + 
-                          `--language-code "en" --text "${text.replace(/"/g, "\\\"")}"`);
+    let command = `aws comprehend detect-sentiment --region us-west-2 ` + 
+                  `--language-code "en" --text "${text.replace(/"/g, "\\\"")}"`;
+
+    if (process.platform != "win32") command = "sudo " + command;
+    let result = execSync(command);
 
     try {
         let parsed = JSON.parse(result);
