@@ -1,3 +1,6 @@
+# EC2 pem file
+*.pem
+
 # Logs
 logs
 *.log

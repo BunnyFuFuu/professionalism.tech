@@ -13,7 +13,8 @@
   },
   "homepage_url": "https://www.treehacks.com/",
   "permissions": [
-    "storage"
+    "storage",
+    "activeTab"
   ],
   "browser_action": {
     "default_icon": "icons/TreeHacks-white-19.png",

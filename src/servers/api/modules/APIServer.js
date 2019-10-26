@@ -7,6 +7,7 @@ const Logger = require("./Logger");
 
 // Routers
 const AuthRouter = require("../routers/auth");
+const SentimentRouter = require("../routers/sentiment");
 const Cors = require("./Cors");
 const IP = require("./IP");
 const ExpressLogger = require("./ExpressLogger");
@@ -54,7 +55,8 @@ module.exports = class APIServer {
             .use(IP.bind(this))
             .use(ExpressLogger(this.logger))
             .use(Cors.bind(this))
-            .use(this.router);
+            .use(this.router)
+            .use("/sentiment", SentimentRouter.bind(this))
 
         await this.init();
 
