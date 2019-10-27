@@ -34,6 +34,6 @@ Several easter eggs exist with a certain *nice* attitude.
 head over to https://professionalism.tech for nothing other than a link back to this repo!
 <br><br>
 ## Other fun sites you should check out:
-    https://icantbelieveitsnot.online
-    https://icantbelieveitsnot.tech
-    https://icantbelieveitsnot.space
+https://icantbelieveitsnot.online<br>
+https://icantbelieveitsnot.tech<br>
+https://icantbelieveitsnot.space<br>
