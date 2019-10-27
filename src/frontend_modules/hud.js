@@ -10,10 +10,10 @@ module.exports = new class HUD {
         API.on("needToLogin",   this.showLoginPanel);
         API.on("loginSuccess",  this.showUserPanel);
 
-        $(".facebook-login").click(() => API.redirectLogin("facebook"));
-        $(".discord-login" ).click(() => API.redirectLogin("discord"));
-        $(".google-login"  ).click(() => API.redirectLogin("google"));
-        $(".logout-button" ).click(() => API.logout());
+        // $(".facebook-login").click(() => API.redirectLogin("facebook"));
+        // $(".discord-login" ).click(() => API.redirectLogin("discord"));
+        $(".google-login" ).click(() => API.redirectLogin("google"));
+        $(".logout-button").click(() => API.logout());
     }
 
     showLoginPanel() {

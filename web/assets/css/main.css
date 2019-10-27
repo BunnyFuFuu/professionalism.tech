@@ -5,9 +5,19 @@ html, body {
     background-color: #111;
 }
 
+.git {
+    color: white;
+    opacity: 0.8;
+}
+
+.git:hover {
+    opacity: 1;
+}
+
 .gary {
     width: 50%;
     height: 50%;
+    border-radius: 50%;;
 }
 
 .theme-bg {

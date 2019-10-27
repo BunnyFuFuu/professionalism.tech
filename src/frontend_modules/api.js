@@ -7,7 +7,7 @@ module.exports = new class API extends EventEmitter {
         /** @type {ClientUser} */
         this.userInfo = null;
         /** @type {OAuth2Type[]} */
-        this.supportedPlatform = ["discord", "facebook", "google"];
+        this.supportedPlatform = ["google"];
     }
 
     init() {
