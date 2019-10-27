@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "Professionalism Checker",
+  "version": "0.0.1",
+
+  "description": "Analyzes your in-progress gmail draft to help prevent professionalism deductions",
+  "icons": {
+    "16":  "icons/ggillespie.png",
+    "32":  "icons/ggillespie.png",
+    "48":  "icons/ggillespie.png",
+    "64":  "icons/ggillespie.png",
+    "96":  "icons/ggillespie.png",
+    "128": "icons/ggillespie.png"
+  },
+
+  "homepage_url": "https://professionalism.tech/",
+
+  "permissions": [
+    "storage"
+],
+
+  "browser_action": {
+    "default_icon": "icons/ggillespie.png",
+    "default_title": "Professionalism Checker",
+    "default_popup": "src/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["/src/content.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js": ["/src/garyClippy.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

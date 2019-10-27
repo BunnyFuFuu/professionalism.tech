@@ -1,0 +1,185 @@
+disadvantages hw9 insert
+
+in general...
+
+could be overkill - simple problem doesn't need such an elaborate solution
+
+high learning curve - high level of sophistication required more time up front
+                      to understand and navigate to know what to implement
+
+much magic (result not explained through input; result not obvious w/ input)
+  - many methods were implicit (destructors, operator overload, polymorphic
+                                calls bound at run-time)
+
+---- begin here
+"the other one that was a really big challenge is that the debugging was
+difficult; debugging was a challenge"
+
+all the polymorphic code had many layers so the solution wasn't always obvious
+
+maybe that was a high learning curve in general
+
+the last assignment we have to view octal dumps
+and it takes a while a lot of hexadecimal numbers and a lot to read
+
+it's readable by the computer, it's not meant to be a human readable file
+
+the solutions work, very sophisticated, more upfront cost, more time spent
+debugging, knowing what's where
+
+-----------
+
+what about our C code, C with void pointners and function pointers
+  - no type checking "it wasn't reduced it was eliminated"
+"it just meant that um i jkeep saying containter for some reason..  what could
+ have been a compile-time error was instead a run-time error"
+
+many pointers significant code to check each pointer to be not null before
+dereferencing that pointer
+
+void pointers can't be dereferenced - uses of void pointers are limited
+
+"what good is a pointer? it's to dereference it"
+
+"what good is a phone number? nothing until you call  it  or use it"
+
+"i think that there was lots of complex syntax and it was maybe the most complex
+syntax out of all of our solutions"
+
+"so there was um use of arrows, ampersands, stars, parenthtesis in declarations
+and in method calls"
+
+"oh and as i mentioned earlier the memory has to be tracked"
+
+"that means the logic in your code had to um track or maintain i guess or
+had to track when memory was no longer necessary"
+
+no object-oriented syntax - reinvent approach rather than language providing the
+                            infrastructure as in java or C--
+
+
+base class/derived class
+"how is that a problem orrr how is that a challenge what are some of the issues"
+"so um we have 23 minutes"
+
+"this is hw6 the C++ part of hw7"
+"even the existence of the class base is an abstract parent"
+
+derivation from an abstract parent
+
+"i think this is us having to conform to the computer and the constraint"
+
+"i think it would be nice if the computer could conform to us"
+
+not like designing objects in the real world
+
+"it could be in C as well the parameters was not normal and natural"
+
+parameters from abstract parent
+due to having to match base, params had to match as well
+
+"our deisgn was always homogeneous container, so did we have compiler enforcemnt
+so um the container was heterogeneous and maybe if that was the design or when
+
+we need the deisgn that would be fine it would be the approach to take but our
+design was a homogenous container so we had no compiler checks to ensure the
+correct type of object was inserted into the conatiner"
+
+"umm another problem was that thte polymorhpism was limited ot member methoods"
+-- less possibilities for polymorphism than in C++ with templates
+
+
+-------------
+
+java with  generics !
+you have the  homogenous container that we wanted
+
+but the compiler would only check for us the enforcement of design and it
+wouldn't remember any type information it would only remember that it was a
+derived class of base so we still needed the derived class from base
+
+the problem was the type information  was discarded after compilation
+that idea meant that we still had to derive from base from an abstract parent
+the parameters will still abstract
+
+ummm the compiler doesn't know the size of the object being stored
+and so you still need that virtual table behind the scenes for all the polymorph
+
+
+so it's a little bit more work to call a polymorphic method so if we call a
+method that is statically bound {i can't keep up}
+
+
+=---------------[
+
+
+why don't we goo to C++ with templates cause again we're running short on time
+
+this  would be your largest executable
+so we've got one ummmmmmm increase in the size of the object file with each
+use of the template container
+
+normally you would write code and you would execute the code again and again
+
+there was some extra syntax that i thought was a little bit irritating
+
+extra syntax: template <class Whatever>
+              the template directive was for one block of code rather than the
+              file
+
+like using namespace is a file kind of directive so we don't need to do
+something again and again
+
+it's the least portable
+you know the different compilers have different um different requirements
+
+there's such a thing called the ansi standard A-N-S-I they vote or somewhat
+decide on the future of the language "this is our specificationn on C++ 2.0"
+
+all the compiler writers [stuff stuff stuff]
+
+compiler messages were verbose, maybe overly verbose?
+
+
+--------------
+
+
+we have 5 more minutes so how about hw9 with C++ templates and disk files
+
+so the onne that we mentioned is that we had viewing required to view octal
+dumps, examining octal dumps
+and it's just not a common or a reasonable debugging technique
+
+a few times i've had to view them in industry in my regular job and other
+people couldn't do it, they asked me to do it, they didn't have the skills
+they didn't know what they were
+it was a poor chpoice for security because you could independently view all
+the data on the disk it's not just hidden in memory or execution it's just
+there to see
+
+and if aesfgpisieughogd
+
+it's the slowest of our applications because all the TNodes were on the disk
+rather than in memory and the disk is much slower than memory
+
+umm we have wasted space in the disk file - deleted items were still present
+without parents, they were still there taking up space, not a whole lot of 
+space but still some space
+
+i think at a high complexity um in memory management
+i think  it's great that TNodes were on the runn time stack but it's a different
+kind of complexity aawg'aeg..gsegs;egnuisegnoiwniowegeoabfoew etc <-------
+
+
+˘˘˘˘˘˘˘`:w
+
+for  every TNode you had to determine when to read from the disk
+and when to write back to the disk
+
+and um i thinkk that's about i think that's a good list
+
+any questions on any of this???
+so that was a good analysis of what we did all quarter
+the benefits and the drawbacks
+
+i'll see you tomorrow for  our last day !

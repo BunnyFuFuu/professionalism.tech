@@ -1,0 +1,60 @@
+<!--
+File: popup.html
+=========================
+This file contains the HTML visible in the browser action,
+which is the window that pops up when you click the icon
+in the upper right corner of the Chrome window. Update this
+HTML file to change the layout of the content if you'd like!
+Currently, it is the TreeHacks banner.
+
+The file doesn't need to be updated for the hackpack, but
+making it look stylish can be a cool extension.
+-->
+
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+  position: relative;
+  vertical-align:middle;
+  background-image: url("/icons/ggillespie.png");
+  background-size: 100% 100%;
+  margin: 0;
+  min-width:  300px;
+  min-height: 300px;
+}
+#gary {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: relative;
+  vertical-align:middle;
+  transition: opacity .25s ease-in-out;
+}
+
+#garyPopup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 10%;
+}#popup {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: 0px;
+  position: absolute;
+  top: 95%;
+  left: 95%;
+}
+
+
+
+</style>
+<body>
+<img id="gary" src="/icons/deepfriedgary3.png"/>
+<script src="popup.js" ></script>
+</body>
+
