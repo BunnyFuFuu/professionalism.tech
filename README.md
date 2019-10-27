@@ -21,12 +21,10 @@ Only data in a gmail draft box is read, and is never stored.
 <br><br>
 ## Installation
 * Download all the files from the dev branch of this repository, and unzip the file.
-<br>
 * Head to chrome://extensions and enable developer mode in the top right corner
-<br>
 * Click on "Load Unpacked" in the top left corner, and select the repository file.
-<br>
 * Enable the extension, and start composing a new gmail to get your Genuine Gary Advice™!
+
 <br><br>
 Click on Gary in the extension taskbar to activate Gary Mode™, browse for Gary related things.
 <br>
