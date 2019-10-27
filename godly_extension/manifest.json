@@ -29,7 +29,7 @@
       "js": [
         "/src/inject.js"
       ],
-      "run_at": "document_end"
+      "run_at": "document_idle"
     }
   ],
   "web_accessible_resources" : ["/src/content.js"]
