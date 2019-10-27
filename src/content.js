@@ -119,30 +119,31 @@ const startTimeout = () => timeout = setTimeout(async () => {
         if (GARY && GARY.parentElement)
             GARY.parentElement.style.opacity = 0;
     }
+    if(window.garyModeActivated){
+        document.querySelectorAll("*").forEach(e => [...e.childNodes].forEach(node => {
+            if (node.nodeType === 3) {
+                let text = node.nodeValue;
+                let replacedText = text
+                    .replace(/gary gillespie/gi, "God")     // replaces "gary gillespie" with "God"
+                    .replace(/gary/gi, "The Lord")          // replaces "gary" with "The Lord"
+                    .replace(/gillespie/gi, "The Almighty") // replaces "gillespie" with "The Almighty"
+                    .replace(/resnet/gi, "Shitnet")         // replaces "resnet" with "Shitnet"
+                    .replace(/jesus/gi, "Gary")
+                    .replace(/christ/gi, "Gillespie")
+                    .replace(/Jesus Christ/gi, "Gary Gillespie");
+                
+                if (replacedText !== text) {
+                    e.replaceChild(document.createTextNode(replacedText), node);
+                }
+            }
+        }));
+    }
     startTimeout();
 }, 3000);
 startTimeout();
 
 const stopInterval = () => timeout && clearTimeout(timeout);
 
-if(window.garyModeActivated){
-    document.querySelectorAll("*").forEach(e => [...e.childNodes].forEach(node => {
-        if (node.nodeType === 3) {
-            let text = node.nodeValue;
-            let replacedText = text
-                .replace(/gary gillespie/gi, "God")     // replaces "gary gillespie" with "God"
-                .replace(/gary/gi, "The Lord")          // replaces "gary" with "The Lord"
-                .replace(/gillespie/gi, "The Almighty") // replaces "gillespie" with "The Almighty"
-                .replace(/resnet/gi, "Shitnet")         // replaces "resnet" with "Shitnet"
-                .replace(/jesus/gi, "Gary")
-                .replace(/christ/gi, "Gillespie")
-                .replace(/Jesus Christ/gi, "Gary Gillespie");
-            
-            if (replacedText !== text) {
-                e.replaceChild(document.createTextNode(replacedText), node);
-            }
-        }
-    }));
-}
+
 
 
