@@ -5,6 +5,11 @@
  * change the corresponding popup.html file.
  */
 
+let gary = document.getElementById("gary");
+
+gary.onclick = () => {
+    gary.style.opacity = gary.style.opacity == 1 ? 0 : 1;
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     var links = document.getElementsByTagName("a");

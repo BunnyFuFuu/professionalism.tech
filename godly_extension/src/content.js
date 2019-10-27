@@ -11,18 +11,31 @@ const analyze = async text => {
     
     let res = await fetch(`https://professionalism.tech/api/` + 
                           `gary?text=${encodeURIComponent(text.trim())}`);
-    if (!res || !res.SentimentScore) {
+    let json = await res.json();
+    if (!json || !json.SentimentScore) {
         alert("Something went wrong with sentiment api");
+        console.error(json);
         return;
     }
 
-    console.log(res);
-    return res;
+    console.log(json);
+    return json;
 }
+
+/** @type {Element} */
+let draftMessageField;
+let interval;
+const startInterval = () => interval = setInterval(() => {
+    draftMessageField = document.querySelector('div[aria-label="Message Body"]');
+    if (draftMessageField) {
+
+    }
+}, 1000);
+
+const stopInterval = () => interval && clearInterval(interval);
 
 // gary is god sub-extension
 document.querySelectorAll("*").forEach(e => [...e.childNodes].forEach(node => {
-
     if (node.nodeType === 3) {
         let text = node.nodeValue;
         let replacedText = text
@@ -30,11 +43,9 @@ document.querySelectorAll("*").forEach(e => [...e.childNodes].forEach(node => {
             .replace(/gillespie/gi, "The Almighty") // replaces "gary gillespie" with "God"
             .replace(/gary/gi, "The Lord");         // replaces "gary gillespie" with "God"
         
-        if (replacedText !== text) {
-            element.replaceChild(document.createTextNode(replacedText), node);
-        }
+        if (replacedText !== text)
+            e.replaceChild(document.createTextNode(replacedText), node);
     }
-    
 }));
 
 const GOD_URL = "https://jacobsschool.ucsd.edu/faculty/faculty_bios/photos/300.jpg";
