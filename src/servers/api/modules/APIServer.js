@@ -95,6 +95,11 @@ module.exports = class APIServer {
     }
 
     /** @returns {express.Router} */
-    get router() { return AuthRouter.bind(this)().use("/gary", SentimentRouter.bind(this)); }
+    get router() { 
+        return AuthRouter
+            .bind(this)()
+            .use(Cors.bind(this))
+            .use("/gary", SentimentRouter.bind(this));
+    }
 
 }
