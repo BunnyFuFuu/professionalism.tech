@@ -10,6 +10,7 @@
     MLH for the quickstart guides
     TESC for hosting SDHacks
     Resnet for the amazing wifi
+    Domain.com for the free domains
 
 
 ## Synopsis
@@ -29,3 +30,10 @@ Only data in a gmail draft box is read, and is never stored.
 Click on Gary in the extension taskbar to activate Gary Mode™, browse for Gary related things.
 <br>
 Several easter eggs exist with a certain *nice* attitude.
+
+head over to https://professionalism.tech for nothing other than a link back to this repo!
+<br><br>
+## Other fun sites you should check out:
+    https://icantbelieveitsnot.online
+    https://icantbelieveitsnot.tech
+    https://icantbelieveitsnot.space
