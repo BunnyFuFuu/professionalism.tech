@@ -6,10 +6,10 @@
     Levente Horvath
 
 ### Thanks to:
-    *AWS for their amazing machine learning APIs
-    *MLH for the quickstart guides
-    *TESC for hosting SDHacks
-    *Resnet for the amazing wifi
+    * AWS for their amazing machine learning APIs
+    * MLH for the quickstart guides
+    * TESC for hosting SDHacks
+    * Resnet for the amazing wifi
 
 
 ## Synopsis
