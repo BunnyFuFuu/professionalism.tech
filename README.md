@@ -1,15 +1,15 @@
 # Professionalism Email Checker (Chrome Extension)
 #### Created by:
-    Ralph Wolterbeek<br>
-    Andrew Liang<br>
-    John Ge<br>
-    Levente Horvath<br>
+    Ralph Wolterbeek
+    Andrew Liang
+    John Ge
+    Levente Horvath
 
 ### Thanks to:
-            AWS for their amazing machine learning APIs<br>
-            MLH for the quickstart guides<br>
-            TESC for hosting SDHacks<br>
-            Resnet for the amazing wifi<br>
+    *AWS for their amazing machine learning APIs
+    *MLH for the quickstart guides
+    *TESC for hosting SDHacks
+    *Resnet for the amazing wifi
 
 
 ## Synopsis
@@ -17,4 +17,4 @@ We've all heard of Gary Gillespie's professionalism deductions, and many of us w
 We set out to fix this by using AWS's advanced machine learning Comprehend API to analyze emails while you're writing them,
 and give you Genuine Gary Advice™ on how to make your emails more professional.
 <br><br>
-Click on Gary to activate Gary Mode™
+Click on Gary to activate Gary Mode™ and browse 
