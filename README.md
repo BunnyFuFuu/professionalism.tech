@@ -1,11 +1,11 @@
 # Professionalism Email Checker (Chrome Extension)
-#### Created by:<br>
+#### Created by:
     Ralph Wolterbeek<br>
     Andrew Liang<br>
     John Ge<br>
     Levente Horvath<br>
 
-### Thanks to:<br>
+### Thanks to:
             AWS for their amazing machine learning APIs<br>
             MLH for the quickstart guides<br>
             TESC for hosting SDHacks<br>
