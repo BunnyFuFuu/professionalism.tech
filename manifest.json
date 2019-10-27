@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Professionalism Checker",
-  "version": "0.0.1",
+  "version": "1.0.0",
 
   "description": "Analyzes your in-progress gmail draft to help prevent professionalism deductions",
   "icons": {

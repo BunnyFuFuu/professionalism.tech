@@ -3,11 +3,16 @@
  */
 
 let gary = document.getElementById("gary");
-var garyModeActivated = false;
+
+chrome.storage.sync.get(["garyMode"], r => {
+    //console.log(r);
+    if (r.garyMode) gary.style.opacity = 1;
+})
 
 gary.onclick = () => {
     gary.style.opacity = gary.style.opacity == 0 ? 1 : 0;
-    window.garyModeActivated = window.garyModeActivated ? false : true;
+    chrome.storage.sync.set({"garyMode": gary.style.opacity == 1});
+    //console.log(`garyMode: ${gary.style.opacity == 1}`);
 }
 
 document.addEventListener('readystatechange', function () {
